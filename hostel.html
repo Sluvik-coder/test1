@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/diplom.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+
+	<title>Диплом</title>
+	<style>
+		.wrapper{
+	padding-top: 80px;
+  position: relative;
+  height: 100%;
+  height: 100vh;  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items:center;
+  align-items: center;
+
+}
+
+.slider{
+  position: relative;
+  overflow: hidden;
+  max-width: 950px;
+  border: 2px solid #008A5E;
+  height: auto;
+  border-radius: 40px;
+}
+
+.slider_items{
+  width: 500%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.slider_items .item{
+  width: 20%;
+  -webkit-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+}
+
+.slider_items .item img{
+	max-width: 100%;
+	height: auto;
+}
+.slider_items input{
+	position: absolute;
+	visibility: hidden;
+	
+}
+
+.slider_nav{
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	 display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.slider_nav .slider_nav_item{
+	width: 70px;
+	height: 25px;
+	border: 4px solid #008A5E;
+	margin:7px;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+@media (max-width: 576px) { 
+
+  .slider_nav .slider_nav_item{
+	width: 40px;
+	height: 20px;
+	border: 3px solid #008a5e;
+	margin:7px;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.wrapper{
+	margin-top: 0px;
+	}
+
+  
+}
+
+.slider_nav .slider_nav_item:hover{
+	background-color: #008a5e;
+}
+
+#s1:checked ~ .s1{
+	margin-left: 0;
+}
+
+#s2:checked ~ .s1{
+	margin-left: -20%;
+}
+
+#s3:checked ~ .s1{
+	margin-left: -40%;
+}
+
+#s4:checked ~ .s1{
+	margin-left: -60%;
+}
+
+#s5:checked ~ .s1{
+	margin-left: -80%;
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+		<div class="header_body">
+		<a href="index.html" class="header_logo">
+			<img src="img/logo1.png"  alt="">
+		</a>
+		<div class="header_burger">
+			<span></span>
+		</div>
+		<nav class="header_menu">
+			<ul class="header_list">
+				<li>
+					<a href="price.html" class="header_link">Стоимость</a>
+				</li>
+				<li>
+					<a href="payment.html" class="header_link">Оплата</a>
+				</li>
+				<li>
+					<a href="address.html" class="header_link">Адреса</a>
+				</li>
+				<li>
+					<a href="hostel.html" class="header_link">Фото</a>
+				</li>
+				<li>
+					<a href="information.html" class="header_link">Информация	</a>
+				</li>
+
+			</ul>
+		</nav>
+		</div>
+		</div>
+	</header>
+	<div class="container" style="">
+		<div class="wrapper">
+			<div class="slider">
+				<div class="slider_nav">
+					<label for="s1" class="slider_nav_item"></label>
+					<label for="s2" class="slider_nav_item"></label>
+					<label for="s3" class="slider_nav_item"></label>
+					<label for="s4" class="slider_nav_item"></label>
+					<label for="s5" class="slider_nav_item"></label>
+				</div>
+				<div class="slider_items">
+					<input type="radio" name="s" id="s1">
+					<input type="radio" name="s" id="s2">
+					<input type="radio" name="s" id="s3">
+					<input type="radio" name="s" id="s4">
+					<input type="radio" name="s" id="s5">
+					<div class="item s1">
+						<img src="img/hostel1.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="img/hostel2.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="img/hostel3.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="img/hostel4.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="img/hostel5.jpg" alt="">
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>

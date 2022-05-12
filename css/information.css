@@ -1,0 +1,115 @@
+.container_information{
+	
+	padding-top: 80px;
+	display: flex;
+
+}
+
+.container_information img{
+
+	
+	width: 50%;
+}
+
+.information_content{
+	
+   height: 100%;
+
+}
+
+.info{	
+    
+	width: 90%;
+	
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    font-size: 16px;
+    color: #4F4F4F;
+
+}
+
+.rounded {
+counter-reset: li; 
+list-style: none; 
+font: 16px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+}
+.rounded li {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: rgba(27, 178, 97, 0.28);
+color:#4F4F4F;	
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded li:hover {background: #daf3e6;}
+.rounded li:hover:before {transform: rotate(360deg);}
+.rounded li:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #008A5E;
+height: 2.5em;
+width: 2.5em;
+line-height: 1.9em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .5s ease-out;
+
+}
+
+.document{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 15px;
+	color: #008A5E;
+	font-weight: 800;
+}
+
+.general_information{
+	margin-top: 60px;
+	font-size: 20px;
+	line-height: 22px;
+}
+
+@media only screen and (max-width: 935px){
+.container_information{
+	flex-wrap: wrap;
+}
+.container_information img{
+ margin: 0 auto;
+	height: 100%;
+	width: 90%;
+	
+}
+
+.info{	
+    margin-top: 5%;
+}
+
+.general_information{
+	margin-top: 30px;
+}
+
+}
+
+@media only screen and (max-width: 470px){
+
+.container_information img{
+ 
+	height: 100%;
+	width: 100%;
+
+}
+}
