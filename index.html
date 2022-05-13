@@ -5,7 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/diplom.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
+	<script>"use strict";
+
+$(document).ready(function() {
+   $('.header_burger').click(function(event) {
+      $('.header_burger,.header_menu').toggleClass('active');
+      $('body').toggleClass('lock');
+   });
+});
+</script>
 
 	<title>Диплом</title>
 </head>
