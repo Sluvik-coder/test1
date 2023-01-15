@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Диплом</title>
+  <script type="text/javascript">
+    $(document).ready(function() {
+   $('.header_burger').click(function(event) {
+      $('.header_burger,.header_menu').toggleClass('active');
+      $('body').toggleClass('lock');
+   });
+});
+  </script>
+  <style>
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  min-width: 320px;
+}
+
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.main_container{
+  background: url(../img/main_photo.jpg) no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 0.01px solid white;
+}
+
+
+
+
+
+/* КНОПКИ */
+
+.main_div_button{
+  margin-top: 20%;
+  text-align: center;
+  
+}
+.main_button{
+  background-color: #008a5e;
+  min-height: 100px;
+  width: 60%;
+  font-size: 45px;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 25px;
+}
+
+.main_button:hover{
+  transition-duration: 1s;
+  background-color: #daf3e6;
+  color: #008a5e;
+
+}
+
+/* СТРАНИЦА АДРЕСОВ*/
+
+.Adress_main{
+  width: 60%;
+  border-radius: 50px;
+  margin:0 auto;
+  padding: 3%;
+  margin-top: 3%;
+ box-shadow: 1px 3px 40px 16px #008A5E;
+
+}
+
+.ul_adress{
+  margin:0 auto;
+  text-align: center;
+}
+
+.ul_adress li {
+  margin: 20px 0px 20px 0px;
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid  rgba(27, 178, 97, 0.28);
+  font-weight: 700;
+  color: #707070;
+  line-height:35px;
+}
+
+.Adress_name{
+  
+   padding-top: 30px;
+   text-align: center;
+   font-size: 50px;
+   font-weight: 700;
+   color: #008a5e;
+}
+
+/* СТРАНИЦА АДРЕСОВ*/
+
+
+
+/* --------------------*/
+
+.container{
+  max-width: 1180;
+  margin:0 auto;
+  padding: 0px 10px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 50;
+}
+
+.header:before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #008a5e;
+  z-index: 2;
+}
+
+.header_body{
+  position: relative;
+  
+  display: flex;
+  justify-content: space-between; 
+  height: 80px;
+  align-items: center;
+}
+.header_logo{
+  flex:0px 0px 60px;
+  position: relative;
+  z-index: 3;
+}
+.header_logo img{
+  width: 75px;
+  border-radius: 50px;
+
+}
+.header_burger{
+  display: none;
+}
+.header_menu{
+
+}
+
+.header_list{
+  display: flex;
+  position: relative;
+  z-index: 2;
+
+}
+.header_list li{
+  list-style: none;
+  margin:0px 0px 0px 30px;
+  
+}
+.header_link{
+color: white;
+ font-size: 28px;
+ font-weight: 700;
+ text-decoration: none;
+
+}
+
+.header_link:hover{
+  border-bottom: 4px solid #daf3e6;
+  transition: all 0.2s ease 0s;
+  border-radius: 8px;
+
+}
+
+ @media (max-width: 767px) {
+
+    body.lock{
+       overflow: hidden;
+    }
+
+    .header_burger{
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+}
+  
+    
+    .header_body{
+      height: 60px;
+    }
+
+    .header_logo{
+      width: 40px;
+    }
+     .header_burger span{
+      position: absolute;
+      background-color: white;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+     }
+     .header_burger:before,
+     .header_burger:after{
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+     }
+     .header_burger:before{
+      top: 0;
+     }
+     .header_burger:after{
+      bottom: 0;
+     }
+
+     .header_burger.active:before{
+      transform:  rotate(45deg);
+      top:9px;
+     }
+
+     .header_burger.active:after{
+      transform:  rotate(-45deg);
+      bottom: 9px;
+     }
+
+     .header_burger.active span{
+      transform: scale(0);
+     }
+
+     .header_menu{
+      position: fixed;
+      top:-100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #008a5e;
+      padding: 70px 10px 20px 10px;
+      transition: all 0.3s ease 0s;
+     }
+
+     .header_menu.active{
+      top: 0;
+     }
+
+     .header_list{
+      display: block;
+     }
+     .header_list li{
+      margin: 0px 0px 20px 0px;
+     }
+     .header_logo img{
+  width: 55px;
+  border-radius: 30px;
+
+  }
+}
+
+/* --------------------*/
+
+
+
+/* сетка медиа запросов*/
+
+@media (max-width: 576px) {
+  .main_button{
+    font-size: 38px;
+    padding: 35px;
+    width: 85%;
+  }
+
+  .ul_adress li {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid  rgba(27, 178, 97, 0.28);
+  font-weight: 700;
+  color: #707070;
+  line-height:35px;
+}
+
+.Adress_main{
+  width: 80%;
+  border-radius: 50px;
+  margin:0 auto;
+  padding: 3%;
+  margin-top: 3%;
+ box-shadow: 1px 3px 40px 16px #008A5E;
+}
+ .Adress_name{
+  font-size: 45px;
+ }
+
+ }
+
+
+@media (max-width: 768px) { 
+  .main_button{
+    margin-top: 10%;
+  } 
+}
+
+
+@media (max-width: 992px) { }
+
+
+@media (max-width: 1200px) {}
+
+/* сетка медиа запросов*/
+
+/* FORM*/
+
+.main_containerr{
+  background-color:#DAF3E6 ;
+  margin-bottom: 50px;
+}
+
+
+.containerr{
+
+  
+  padding-top: 70px;
+  
+  height: 100%;
+  width: 100%;
+   padding-bottom: 50px;
+}
+
+.row{
+  margin: 0 auto;
+  margin-top: 100px;
+  
+  
+  width: 60%;
+  
+}
+
+legend{
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #008A5E;
+  padding-bottom: 20px;
+}
+
+.form-group label{
+  font-size: 28px;
+  font-weight: 700;
+  color: #008A5E;
+  
+}
+
+.form-control{
+  margin: 12px 0px 12px 0px;
+  font-size: 26px;
+  color: #008A5E;
+  width: 100%;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+.form-control._error{
+  box-shadow: 0 0 15px red;
+  color: red;
+}
+
+.form-control:hover{
+box-shadow: -5px 0px 14px 5px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+transition-duration: 0.3s;
+}
+
+.btn{
+  margin-left: 9%;
+ width:80%;
+ height: 100%;
+ margin-top: 20px;
+ border: none;
+ background-color: white;
+ color:#008A5E;
+ border-radius: 35px;
+ font-size: 36px;
+ font-weight: 700;
+ padding: 3px;
+
+}
+
+.btn:hover{
+  box-shadow: -5px 0px 14px 5px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+    box-shadow: inset -5px 0px 14px 8px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+    transition-duration: 0.3s;
+}
+
+.checkbox_input{
+  display: none;
+}
+
+.checkbox_input:checked + .checkbox_label::after{
+transform: scale(1);
+}
+
+.checkbox_label{
+  font-size: 23px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #008a5e;
+  font-weight: 700;
+  width: 100%;
+}
+
+.checkbox_label::before{
+  content: '';
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.checkbox_label::after{
+  transition: transform 0.5s ease 0s;
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #008a5e;
+  border-radius: 4px;
+  transform: scale(0);
+}
+
+@media (max-width: 700px) {
+.btn{
+  height: 90px;
+  width: 100%;
+  margin-left: 0px;
+
+}
+
+.containerr{
+  padding-top: 20px;
+
+}
+.row{
+  
+  width: 80%;
+  
+  }
+}
+
+/* FORM*/
+
+
+  </style>
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="container">
+    <div class="header_body">
+    <a href="../index.html" class="header_logo">
+      <img src="..//img/logo1.png"  alt="">
+    </a>
+    <div class="header_burger">
+      <span></span>
+    </div>
+    <nav class="header_menu">
+      <ul class="header_list">
+        <li>
+          <a href="../price.html" class="header_link">Стоимость</a>
+        </li>
+        <li>
+          <a href="../payment.html" class="header_link">Оплата</a>
+        </li>
+        <li>
+          <a href="../address.html" class="header_link">Адреса</a>
+        </li>
+        <li>
+          <a href="../hostel.html" class="header_link">Фото</a>
+        </li>
+        <li>
+          <a href="../information.html" class="header_link">Информация</a>
+        </li>
+
+      </ul>
+    </nav>
+    </div>
+    </div>
+  </header>
+  <div class="main_containerr">
+   <div class="containerr">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <form action="telegram.php" id="form" method="POST">
+            <legend>Анкета</legend>
+
+            <div class="form-group">
+              <label for="">Имя</label><br>
+              <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+            </div>
+
+            <div class="form-group">
+              <label for="">Фамилия</label><br>
+              <input type="text" class="form-control" id="" name="user_familia" placeholder="Шуман">
+            </div>
+
+            <div class="form-group">
+              <label for="">Отчество</label><br>
+              <input type="text" class="form-control" id="" name="user_patronymic" placeholder="Дмитриевич">
+            </div>
+
+            <div class="form-group">
+              <label for="">Гражданство</label><br>
+              <input type="text" class="form-control" id="" name="user_citizenship" placeholder="РБ">
+            </div>
+
+            <div class="form-group">
+              <label for="">Номер паспорта</label><br>
+              <input type="text" class="form-control" id="" name="user_passport" placeholder="MP9999999">
+            </div>
+          
+            <div class="form-group">
+              <label for="">Телефон</label><br>
+              <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+            </div>
+          
+            <div class="form-group">
+              <label for="">Email</label><br>
+              <input type="text" class="form-control _email" id="" name="user_email" placeholder="mail@mail.ru">
+            </div>
+
+            <div class="form-group">
+              <label for="">Курс</label><br>
+              <input type="text" class="form-control" id="" name="user_year" placeholder="1-5">
+            </div>
+
+            <div class="form-group">
+              <label for="">Факультет</label><br>
+              <input type="text" class="form-control" id="" name="user_faculty" placeholder="ФИТР">
+            </div>
+
+            <div class="form-group">
+              <label for="">Номер общежития</label><br>
+              <input type="text" class="form-control" id="" name="user_hostel" placeholder="Общежитие №13">
+            </div>
+
+            <div class="form-group">
+              <label for="">Номер комнаты</label><br>
+              <input type="text" class="form-control" id="" name="user_room" placeholder="6">
+            </div>
+            
+            <div class="checkbox">
+              <input id="formAgreement" required  checked type="checkbox" name="agreement" class="checkbox_input">
+              <label for="formAgreement" class="checkbox_label">Я даю своё согласие на обработку персональных данных*</label>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Отправить форму</button>
+          </form>
+        </div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
+  </div>
+  </div>
+</body>
+	

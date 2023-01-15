@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/diplom.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<title>Диплом</title>
+	<script type="text/javascript">
+		$(document).ready(function() {
+   $('.header_burger').click(function(event) {
+      $('.header_burger,.header_menu').toggleClass('active');
+      $('body').toggleClass('lock');
+   });
+});
+	</script>
+	<style>
+.main_containerr{
+  background: url(./img/payment.jpg) no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 0.01px solid white;
+}
+
+		.ul_adress li {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid  rgba(27, 178, 97, 0.28);
+  font-weight: 700;
+  color: #707070;
+  line-height:35px;
+}
+
+.Adress_main{
+  width: 80%;
+  border-radius: 70px;
+  margin:0 auto;
+  padding: 3%;
+  margin-top: 3%;
+ box-shadow: 1px 3px 40px 16px #008A5E;
+}
+ .Adress_name{
+  font-size: 45px;
+ }
+
+
+.flex_payment{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+
+}
+
+.flex_payment1{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+
+}
+
+.containerr{
+  padding-top: 70px;
+  height: 100%;
+  width: 100%;
+   padding-bottom: 50px;
+}
+
+.row{
+  margin: 0 auto;
+  margin-top: 100px;
+    background-color:#DAF3E6 ;
+  padding: 30px;
+  width: 70%;
+  border-radius: 60px;
+  
+}
+
+
+
+legend{
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #008A5E;
+  padding-bottom: 20px;
+}
+
+
+
+.form-control{
+  margin: 12px 0px 12px 0px;
+  font-size: 26px;
+  color: #008A5E;
+  width: 80%;
+  border-radius: 30px;
+  padding: 7px;
+
+}
+
+
+
+.form-control:hover{
+box-shadow: -5px 0px 14px 5px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+transition-duration: 0.3s;
+}
+
+.btn{
+  margin-left: 9%;
+ width:80%;
+ height: 100%;
+ margin-top: 20px;
+ border: none;
+ background-color: white;
+ color:#008A5E;
+ border-radius: 35px;
+ font-size: 36px;
+ font-weight: 700;
+ padding: 3px;
+
+}
+
+.btn:hover{
+  box-shadow: -5px 0px 14px 5px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+    box-shadow: inset -5px 0px 14px 8px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
+    transition-duration: 0.3s;
+}
+
+.checkbox_input{
+  display: none;
+}
+
+.checkbox_input:checked + .checkbox_label::after{
+transform: scale(1);
+}
+
+.checkbox_label{
+  font-size: 23px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #008a5e;
+  font-weight: 700;
+  width: 100%;
+}
+
+.checkbox_label::before{
+  content: '';
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.checkbox_label::after{
+  transition: transform 0.5s ease 0s;
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #008a5e;
+  border-radius: 4px;
+  transform: scale(0);
+}
+
+@media (max-width: 700px) {
+.btn{
+  height: 90px;
+  width: 100%;
+  margin-left: 0px;
+
+}
+
+.containerr{
+  padding-top: 20px;
+
+}
+.row{
+  
+  width: 80%;
+  
+  }
+
+  .main_containerr{
+
+    height: 105%;
+   
+}
+.checkbox label{
+  font-size: 17px;
+}
+
+}
+	</style>
+</head>
+<body>
+	<div class="main_containerr">
+	<header class="header">
+		<div class="container">
+		<div class="header_body">
+		<a href="index.html" class="header_logo">
+			<img src="img/logo1.png"  alt="">
+		</a>
+		<div class="header_burger">
+			<span></span>
+		</div>
+		<nav class="header_menu">
+			<ul class="header_list">
+				<li>
+					<a href="price.html" class="header_link">Стоимость</a>
+				</li>
+				<li>
+					<a href="payment.html" class="header_link">Оплата</a>
+				</li>
+				<li>
+					<a href="address.html" class="header_link">Адреса</a>
+				</li>
+				<li>
+					<a href="hostel.html" class="header_link">Фото</a>
+				</li>
+				<li>
+					<a href="information.html" class="header_link">Информация</a>
+				</li>
+
+			</ul>
+		</nav>
+		</div>
+		</div>
+	</header>
+<div class="main_containerr">
+   <div class="containerr">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <form action="#" id="form" method="POST">
+            <legend>Онлайн-оплата</legend>
+            	<div style="text-align: center; color: #008A5E; font-weight: 700; font-size: 20px;">Введите номер карты</div>
+             <div class="flex_payment">
+             	
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="" name="user_name" placeholder="xxxx">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="" name="user_name" placeholder="xxxx">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="" name="user_name" placeholder="xxxx">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="" name="user_name" placeholder="xxxx">
+            </div>
+              </div>
+
+
+
+              <div class="flex_payment1">
+              	<div>
+              		<div class="form-group">
+              
+              <input type="text" class="form-control" id="" name="user_name" placeholder="имя и фамилия">
+                    </div>
+              	</div>
+              	<div class="form-group">
+             
+              <input type="text" class="form-control" id="" name="user_name" placeholder="CVC/CVV">
+                    </div>
+                    <div class="form-group">
+             
+              <input type="text" class="form-control" id="" name="user_name" placeholder="срок действия">
+                    </div>
+              	
+              </div>
+             <div class="checkbox">
+              <input id="formAgreement" required  checked type="checkbox" name="agreement" class="checkbox_input _req">
+              <label for="formAgreement" class="checkbox_label">Я даю своё согласие на обработку персональных данных*</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Оплатить</button>
+          </form>
+        </div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
+	</div>
+</body>

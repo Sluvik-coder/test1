@@ -100,8 +100,6 @@ h6 {
 
 
 
-
-
 /* КНОПКИ */
 
 .main_div_button{
@@ -242,6 +240,7 @@ color: white;
   border-bottom: 4px solid #daf3e6;
   transition: all 0.2s ease 0s;
   border-radius: 8px;
+
 }
 
  @media (max-width: 767px) {
@@ -349,18 +348,7 @@ color: white;
     width: 85%;
   }
 
-  .flex_payment1{
-    flex-wrap: wrap;
-
-  } 
-
- }
-
-/* сетка медиа запросов*/
-
-/* payment */
-
- .ul_adress li {
+  .ul_adress li {
   margin: 20px 0px 20px 0px;
   font-size: 25px;
   padding-bottom: 15px;
@@ -382,23 +370,36 @@ color: white;
   font-size: 45px;
  }
 
+ }
 
-.flex_payment{
-  display: flex;
-  justify-content:space-between;
-  text-align: center;
 
+@media (max-width: 768px) { 
+  .main_button{
+    margin-top: 10%;
+  } 
 }
 
-.flex_payment1{
-  display: flex;
-  justify-content:space-between;
-  text-align: center;
 
+@media (max-width: 992px) { }
+
+
+@media (max-width: 1200px) {}
+
+/* сетка медиа запросов*/
+
+/* FORM*/
+
+.main_containerr{
+  background-color:#DAF3E6 ;
+  margin-bottom: 50px;
 }
+
 
 .containerr{
+
+  
   padding-top: 70px;
+  
   height: 100%;
   width: 100%;
    padding-bottom: 50px;
@@ -407,14 +408,11 @@ color: white;
 .row{
   margin: 0 auto;
   margin-top: 100px;
-    background-color:#DAF3E6 ;
-  padding: 30px;
-  width: 70%;
-  border-radius: 30px;
+  
+  
+  width: 60%;
   
 }
-
-
 
 legend{
   text-align: center;
@@ -424,19 +422,21 @@ legend{
   padding-bottom: 20px;
 }
 
-
+.form-group label{
+  font-size: 28px;
+  font-weight: 700;
+  color: #008A5E;
+  
+}
 
 .form-control{
   margin: 12px 0px 12px 0px;
   font-size: 26px;
   color: #008A5E;
-  width: 80%;
+  width: 100%;
   border-radius: 30px;
   padding: 7px;
-
 }
-
-
 
 .form-control:hover{
 box-shadow: -5px 0px 14px 5px rgba(0, 138, 94,0.25), 5px 0px 14px 5px rgba(0, 138, 94,0.22), 0px -5px 14px 5px rgba(0, 138, 94,0.25), 0px 5px 14px 5px rgba(0, 138, 94,0.22);
@@ -464,58 +464,6 @@ transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
-.checkbox_input{
-  display: none;
-}
-
-.main_containerr{
-  background: url(../img/payment.jpg) no-repeat;
-    background-position: 100% 100%;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border: 0.01px solid white;
-}
-
-.checkbox_input:checked + .checkbox_label::after{
-transform: scale(1);
-}
-
-.checkbox_label{
-  font-size: 23px;
-  line-height: 140%;
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  color: #008a5e;
-  font-weight: 700;
-  width: 100%;
-}
-
-.checkbox_label::before{
-  content: '';
-  align-self: flex-start;
-  flex: 0 0 24px;
-  height: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.checkbox_label::after{
-  transition: transform 0.5s ease 0s;
-  content: '';
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  background-color: #008a5e;
-  border-radius: 4px;
-  transform: scale(0);
-}
-
 @media (max-width: 700px) {
 .btn{
   height: 90px;
@@ -528,11 +476,11 @@ transform: scale(1);
   padding-top: 20px;
 
 }
-.row{
-  
-  width: 80%;
-  
-  }
 }
 
-/* payment */
+
+
+
+
+/* FORM*/
+
